@@ -112,6 +112,21 @@ h2:after{
     text-align: center;
 }
 
+.projects_link:link,
+.projects_link:visited{
+    display: inline-block;
+    color: #e67e22;
+    border-bottom: 0.1px solid #e67e22;
+    text-decoration: none;
+    transition: border-bottom 0.2s, color 0.3s;
+}
+
+.projects_link:hover,
+.projects_link:active{
+    color: black;
+    border-bottom: 1px solid transparent;
+}
+
 /******----- ICONS----*******/
 
 .icon-big{
@@ -119,6 +134,17 @@ h2:after{
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+}
+
+.icon-small{
+
+    text-align: center;
+    width: 30%;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -.1%
 }
 
 /* -------- BUTTONS  ----------- */
@@ -180,6 +206,7 @@ header {
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -270,15 +297,60 @@ header {
 
 .meal-photo .forex1{
     height: 10%;
-    margin-left: 20px;
-    margin-bottom: -25%;
+    margin-left: -1%;
+    margin-bottom: -24.5%;
+
 }
 
 .meal-photo .forex2{
-    height: 10%;
-    width: 15%;
-    margin-left: 0px;
-    margin-bottom: -100%;
+    width: 117.5%;
+    margin-bottom: -2.5%;
+    overflow: hidden;
+}
+
+.meal-photo .forex3{
+    width: 160.5%;
+    overflow: hidden;
+    margin-bottom: -14.8%;
+    margin-left: -30%;
+
+}
+
+.meal-photo .forex4{
+    width: 150.5%;
+    margin-bottom: -9%;
+    overflow: hidden;
+}
+
+.meal-photo .forex5{
+    width: 137.5%;
+    margin-bottom: -6.3%;
+    overflow: hidden;
+    padding-right: 20%;
+    margin-left: -10%;
+}
+
+.meal-photo .forex6{
+    width: 130.2%;
+    margin-bottom: -4% ;
+    overflow: hidden;
+    padding-right: 20%;
+    margin-left: -6%;
+}
+
+.meal-photo .forex7{
+    width: 150.5%;
+    margin-bottom: -10%;
+    overflow: hidden;
+    margin-left: -20%;
+}
+
+.meal-photo .forex8{
+    width: 137.5%;
+    margin-bottom: -6%;
+    overflow: hidden;
+    padding-right: 20%;
+    margin-left: -9%;
 }
 
 .meal-photo img {
@@ -293,6 +365,46 @@ header {
     opacity: 1;
     transform: scale(1.03);
 
+}
+
+.meal-photo .forex7:hover {
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+.app-screen {
+    width:37.6%;
+    height: auto;
+
+    transition: transform 0.5s, opacity 0.5s;
+    display: inline-block;
+    padding-right: 4%;
+    margin-left: 11%
+}
+
+
+.app-screen:hover {
+    opacity: 1;
+    transform: scale(1.6);
+
+}
+
+.app-screen:first-child:hover {
+    opacity: 1;
+    transform: scale(1.9);
+
+}
+
+.app-screen:first-child {
+    width:37.6%;
+    height: auto;
+    transform: scale(1.13);
+    transition: transform 0.5s, opacity 0.5s;
+    display: inline-block;
+    padding-right: 5%;
+    margin-bottom: 1.6%;
+    margin-left:
 }
 
 
@@ -354,6 +466,57 @@ header {
 }
 
 /* ------------------------------------------------------------ */
+/* -------- CONTACTS ----------- */
+/* ------------------------------------------------------------ */
+.contacts{
+    margin-bottom: 3%;
+}
+
+/* ------------------------------------------------------------ */
+/* -------- SKILLS & COURSES ----------- */
+/* ------------------------------------------------------------ */
+
+.section-plans{
+    background-color: #f4f4f4
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 200%;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+
+}
+
+.relevant-courses{
+    font-size: 65%;
+}
+.course-1{
+    font-size: 200%;
+    margin-bottom: 10px;
+    color: #e67e22;
+    font-weight: 100;
+
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
+
+.course-2{
+
+}
+
+/* ------------------------------------------------------------ */
 /* -------- TESTING ----------- */
 /* ------------------------------------------------------------ */
 
@@ -364,7 +527,7 @@ header {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 3.5s steps(40, end),
+    typing 4.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
